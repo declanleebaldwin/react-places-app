@@ -1,0 +1,10 @@
+.typeListItem {
+	cursor: pointer;
+	padding: 1rem;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.typeListItem:hover {
+	background-color: #eee;
+}
