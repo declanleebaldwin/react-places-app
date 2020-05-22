@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
-
+const dotenv = require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -18,7 +18,7 @@ app.get('/api/hello', (req, res) => {
 
 app.post('/api/world', (req, res) => {
     let type="restaurant"
-    let apiKey = "AIzaSyDAjnXoJk2vsogi17e1VMGU4UYUGohA1UU";
+    let apiKey = process.env.GOOGLE_PLACES_API_KEY;
     let latitude = 51.485695400000004;
     let longitude = -0.20989819999999998;
     let radius = 1500;
